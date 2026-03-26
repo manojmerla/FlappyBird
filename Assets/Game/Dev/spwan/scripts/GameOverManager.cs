@@ -15,19 +15,16 @@ public class GameOverManager : MonoBehaviour
 
     public void GameOver()
     {
-        
         ScoreManager.instance.SaveHighScore();
 
-        
+        // ✅ Reload latest saved high score
+        ScoreManager.instance.ReloadHighScore();
+
         gameOverScoreText.text = "Score : " + ScoreManager.instance.score;
         gameOverHighScoreText.text = "High Score : " + ScoreManager.instance.GetHighScore();
 
-        
         gameOverPanel.SetActive(true);
 
-        
         Time.timeScale = 0f;
     }
-
-
 }

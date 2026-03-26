@@ -59,19 +59,23 @@ public class ScoreManager : MonoBehaviour
         highScoreText.text = "High Score : " + data.highScore;
     }
 
+    // ✅ IMPORTANT: reload latest saved high score
+    public void ReloadHighScore()
+    {
+        LoadHighScore();
+    }
+
     public int GetHighScore()
     {
         return data.highScore;
     }
 
-    // 🔹 RESET SCORE
     public void ResetScore()
     {
         score = 0;
         scoreText.text = "Score : 0";
     }
 
-    // 🔹 RESET HIGH SCORE
     public void ResetHighScore()
     {
         data.highScore = 0;

@@ -4,7 +4,7 @@ public class spwan : MonoBehaviour
 {
     [SerializeField] private int maxheight = 4;
     [SerializeField] private int minheight = -1;
-    public int spwanrate = 7;
+    public int spwanrate = 3;
 
     [SerializeField] private PoollManager pool; 
 

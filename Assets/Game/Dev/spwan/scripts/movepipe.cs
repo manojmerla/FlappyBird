@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class movepipe : MonoBehaviour
 {
-    public static float speed = 3f;
-    public float increaseRate = 30f;
+    public static float speed = 4f;
+    public float increaseRate = 10f;
 
     private float leftEdge;
 

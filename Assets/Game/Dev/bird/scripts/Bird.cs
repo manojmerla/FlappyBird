@@ -9,7 +9,12 @@ public class Bird : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource; 
     [SerializeField] private AudioClip jumpSound;     
-     [SerializeField] private AudioClip Out;     
+     [SerializeField] private AudioClip Out;   
+
+     void Start()
+    {
+        Invoke(nameof(Jump),3f);
+    }
 
 
     void Update()
